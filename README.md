@@ -1,4 +1,3 @@
-# cjbanks.github.io
-#My Website
+My Website
 
 Welcome to my website!
