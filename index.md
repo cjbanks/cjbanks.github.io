@@ -1,18 +1,8 @@
 ---
 
-title: My Website
+title: About Me
 layout: default
 
 ---
 
-
-## Welcome to My Website!!
-
-> Currently under construction.
-> This is a block quote.
-> Added this to block quote after redirecting website
-
-
-I should write my Resume
-
-
+I am a robotics PhD student at the Georgia Institute of Technology. My background is in control theory, human robot interaciton (HRI), and artificial intelligence. My research interests focus on Human Swarm Interaction and developing tools for effective communication between humans and swarms of robots. I also do some work in motion planning for single/multi-agent systems.
