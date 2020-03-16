@@ -1,1 +1,8 @@
 theme: jekyll-theme-minimal
+name: My Website
+plugins_dir: ./_scripts
+
+
+plugins_dir:
+ -jekyll-sitemap
+ -jekyll-seo-tag

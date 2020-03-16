@@ -1,3 +1,11 @@
+---
+
+title: My Website
+layout: default
+
+---
+
+
 ## Welcome to My Website!!
 
 > Currently under construction.
