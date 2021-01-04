@@ -5,3 +5,7 @@ plugins_dir: ./_scripts
 plugins_dir:
  -jekyll-sitemap
  -jekyll-seo-tag
+
+collections:
+  projects:
+    output: true

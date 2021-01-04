@@ -3,4 +3,6 @@
 - name: Resume
   link: /resume/Resume.pdf
 - name: Projects
-  link: /projects/projects.html
+  link: /all_projects_list.html
+- name: Publications
+  link: /publications.html
