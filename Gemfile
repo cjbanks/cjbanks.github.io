@@ -11,4 +11,4 @@ gem "jekyll-theme-minimal"
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 
-# gem "rails"
+#gem "rails"
