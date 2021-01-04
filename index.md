@@ -6,7 +6,7 @@ layout: default
 ---
 # About Me
 
-![Me](images/headshot_chris.jpg){:width="300px" :height="300px"}
+![Me](/assets/images/headshot_chris.jpg){:width="300px" :height="300px"}
 
 
 
