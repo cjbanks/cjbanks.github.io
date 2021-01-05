@@ -2,6 +2,8 @@
   link: /
 - name: Resume
   link: /resume/Resume.pdf
+- name: Latest Projects
+  link: /latest_projects.html
 - name: Projects
   link: /all_projects_list.html
 - name: Publications
