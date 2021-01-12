@@ -1,13 +1,18 @@
-title: My Website
+title: Christopher Banks
 plugins_dir: ./_scripts
 
-theme: jekyll-theme-modernist
-
-
 plugins_dir:
- -jekyll-sitemap
- -jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-seo-tag
 
 collections:
   projects:
     output: true
+
+theme: minima
+
+minima:
+  skin: dark
+  social_links:
+          github: cjbanks
+  

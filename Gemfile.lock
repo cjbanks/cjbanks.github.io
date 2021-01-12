@@ -263,7 +263,7 @@ DEPENDENCIES
   jekyll
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-theme-minimal
+  minima
 
 BUNDLED WITH
    2.2.4
