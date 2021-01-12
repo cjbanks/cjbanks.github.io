@@ -1,5 +1,7 @@
-name: My Website
+title: My Website
 plugins_dir: ./_scripts
+
+theme: jekyll-theme-modernist
 
 
 plugins_dir:
