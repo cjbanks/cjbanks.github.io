@@ -11,5 +11,3 @@ plugins_dir:
 collections:
   projects:
     output: true
-
-theme: jekyll-theme-modernist
