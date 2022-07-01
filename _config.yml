@@ -9,6 +9,7 @@ collections:
   projects:
     output: true
 
+repository: cjbanks/cjbanks.github.io
 theme: minima
 
 minima:

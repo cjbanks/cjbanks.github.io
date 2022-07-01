@@ -6,19 +6,17 @@
 <title>Online Cross Entropy Task Allocation | Christopher Banks</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Online Cross Entropy Task Allocation" />
-<meta name="author" content="active" />
+<meta name="author" content="past" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An online method for cross-entropy sampling is developed, used in multi-agent task allocation." />
 <meta property="og:description" content="An online method for cross-entropy sampling is developed, used in multi-agent task allocation." />
-<link rel="canonical" href="http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html" />
-<meta property="og:url" content="http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html" />
 <meta property="og:site_name" content="Christopher Banks" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html","headline":"Online Cross Entropy Task Allocation","dateModified":"2020-12-01T00:00:00-05:00","datePublished":"2020-12-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html"},"author":{"@type":"Person","name":"active"},"description":"An online method for cross-entropy sampling is developed, used in multi-agent task allocation.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/2020/12/01/Online-Cross-Entropy-Task-Allocation.html","headline":"Online Cross Entropy Task Allocation","dateModified":"2020-12-01T00:00:00-05:00","datePublished":"2020-12-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/12/01/Online-Cross-Entropy-Task-Allocation.html"},"author":{"@type":"Person","name":"past"},"description":"An online method for cross-entropy sampling is developed, used in multi-agent task allocation.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Christopher Banks" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Christopher Banks" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Christopher Banks</a><nav class="site-nav">
@@ -42,21 +40,29 @@
     <h1 class="post-title p-name" itemprop="name headline">Online Cross Entropy Task Allocation</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2020-12-01T00:00:00-05:00" itemprop="datePublished">Dec 1, 2020
-      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">active</span></span></p>
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">past</span></span></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <p>An online method for cross-entropy sampling is developed, used in multi-agent task allocation.</p>
 
-<p><img src="/assets/images/online_ce_experiment_run_simback.png" alt="online_sim_back" /></p>
+<p><a href="https://youtu.be/U9OZ_tGr4As"><img src="/assets/images/online_ce_experiment_run_simback.png" alt="online_sim_back" /></a>
+<strong>Click on the Image for Video</strong></p>
 
-<h3 id="abstract">Abstract</h3>
+<h3 id="project-summary">Project Summary</h3>
+<p>This paper presents a task orchestration framework for multiagent systems utilising linear temporal logic (LTL) and cross entropy optimisation, a stochastic optimisation technique used for rare-event sampling.</p>
 
-<p>We present a task orchestration framework for multi-agent systems utilizing linear temporal logic (LTL) andcross entropy optimization, a stochastic optimization technique. We define task orchestration as a combination of taskdecomposition, allocation and planning for a robot or team of robots given a high-level specification. Specifically, weconsider  tasks  that  are  complex  and  consist  of  environment  constraints,  system  constraints,  or  both,  that  must  besatisfied. We first show this for the single agent case where transition systems for the environment allow tasks to bedeveloped as linear temporal logic (LTL) specifications. Trajectories are then generated via motion primitives for a singlequadcopter and optimized via cross entropy to ensure optimal satisfaction of a cost function. We extend this work to themulti-agent case where a team of homogeneous quadcopters are considered to satisfy an LTL specification. In orderto provide faster computations and initial cost agnostic sampling we formulate the online version of multi-agent taskallocation via cross entropy for tasks specified in temporal logic specifications. The results of this framework are verifiedin simulation and experimentally with a team of quadcopters.</p>
+<p>We define task orchestration as a combination of task decomposition, allocation and planning for a quadcopter or team of quadcopters given a high level specification. Specifically, we consider tasks that are complex and consist of environment constraints, system constraints, or both, that must be satisfied.</p>
 
-<p><a href="">Journal Paper</a></p>
+<p><img src="/assets/images/online_ce_journal/robo_env_product_sys.png" alt="transition_system" /></p>
 
-<p><a href="">GitHub</a></p>
+<p>We first approach motion planning for the single agent case where transition systems for the environment allow tasks to be developed as linear temporal logic (LTL) specifications. Trajectories are then generated via motion primitives for a single quadcopter and optimised via cross entropy to ensure optimal satisfaction of a cost function. We extend this work to the multiagent case where a team of homogeneous quadcopters are considered to satisfy an LTL specification.</p>
+
+<p>In order to provide faster computations and initial cost-agnostic sampling, we formulate the online version of multi-agent task allocation via cross entropy for tasks specified in LTL specifications. The results of this framework are verified in simulation and experimentally with a team of quadcopters.</p>
+
+<p><img src="/assets/images/online_ce_journal/still_from_exp_journal.png" alt="still_from_exp_journal" /></p>
+
+<p><a href="/publications_dir/ltl_cross_entropy_2022.pdf">Journal Paper</a></p>
 
 
   </div><a class="u-url" href="/2020/12/01/Online-Cross-Entropy-Task-Allocation.html" hidden></a>

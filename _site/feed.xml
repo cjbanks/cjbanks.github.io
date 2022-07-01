@@ -1,17 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-30T01:14:18-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Christopher Banks</title><entry><title type="html">Online Cross Entropy Task Allocation</title><link href="http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html" rel="alternate" type="text/html" title="Online Cross Entropy Task Allocation" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation</id><content type="html" xml:base="http://localhost:4000/2020/12/01/Online-Cross-Entropy-Task-Allocation.html">&lt;p&gt;An online method for cross-entropy sampling is developed, used in multi-agent task allocation.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-01T17:47:08-04:00</updated><id>/feed.xml</id><title type="html">Christopher Banks</title><entry><title type="html">Physical Human U A V Interaction With Commertial Drones</title><link href="/2021/10/04/Physical-Human-U-A-V-Interaction-with-Commertial-Drones.html" rel="alternate" type="text/html" title="Physical Human U A V Interaction With Commertial Drones" /><published>2021-10-04T00:00:00-04:00</published><updated>2021-10-04T00:00:00-04:00</updated><id>/2021/10/04/Physical-Human-U-A-V-Interaction-with-Commertial-Drones</id><content type="html" xml:base="/2021/10/04/Physical-Human-U-A-V-Interaction-with-Commertial-Drones.html">&lt;p&gt;This project uses filtering to estimate forces exerted on a quadrotor and develop a reference trajectoryto track desired motions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/online_ce_experiment_run_simback.png&quot; alt=&quot;online_sim_back&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/Qv7ZBP104V8&quot;&gt;&lt;img src=&quot;/assets/images/admittance_control_conference/chris_quads2.png&quot; alt=&quot;quad interaction&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;abstract&quot;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&quot;project-summary&quot;&gt;Project Summary&lt;/h3&gt;
+&lt;p&gt;In this paper, we propose a control scheme that allows generic commercial multirotor Unmanned Aerial Vehicles (UAVs) to infer human intent from physical interaction.&lt;/p&gt;
 
-&lt;p&gt;We present a task orchestration framework for multi-agent systems utilizing linear temporal logic (LTL) andcross entropy optimization, a stochastic optimization technique. We define task orchestration as a combination of taskdecomposition, allocation and planning for a robot or team of robots given a high-level specification. Specifically, weconsider  tasks  that  are  complex  and  consist  of  environment  constraints,  system  constraints,  or  both,  that  must  besatisfied. We first show this for the single agent case where transition systems for the environment allow tasks to bedeveloped as linear temporal logic (LTL) specifications. Trajectories are then generated via motion primitives for a singlequadcopter and optimized via cross entropy to ensure optimal satisfaction of a cost function. We extend this work to themulti-agent case where a team of homogeneous quadcopters are considered to satisfy an LTL specification. In orderto provide faster computations and initial cost agnostic sampling we formulate the online version of multi-agent taskallocation via cross entropy for tasks specified in temporal logic specifications. The results of this framework are verifiedin simulation and experimentally with a team of quadcopters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/admittance_control_conference/control_diagram.png&quot; alt=&quot;control diagram&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;Journal Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Humans apply forces by touching it or pulling a nylon string attached to the body frame of the vehicle. The estimations of these forces, obtained via a square root unscented Kalman filter, are used by an admittance controller to generate a reference trajectory such that the vehicle reacts as a desired mass-damper system.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>active</name></author><summary type="html">An online method for cross-entropy sampling is developed, used in multi-agent task allocation.</summary></entry><entry><title type="html">Anomaly Detection In Auv Images</title><link href="http://localhost:4000/2020/04/14/Anomaly-Detection-In-AUV-Images.html" rel="alternate" type="text/html" title="Anomaly Detection In Auv Images" /><published>2020-04-14T00:00:00-04:00</published><updated>2020-04-14T00:00:00-04:00</updated><id>http://localhost:4000/2020/04/14/Anomaly-Detection-In-AUV-Images</id><content type="html" xml:base="http://localhost:4000/2020/04/14/Anomaly-Detection-In-AUV-Images.html">&lt;p&gt;Classifying and categorizing anomolous data gathered from a deep sea autonomous underwater vehicle (AUV).&lt;/p&gt;
+&lt;p&gt;To track this trajectory, the differential flatness property of the multirotor dynamic model is exploited. This, in fact, allows the generation of any possible kind of input required by the on-board controller supplied by the manufacturer. 
+We validate our results experimentally on a Parrot Bebop 2 quadrotor, a commercially available UAV.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/admittance_control_conference/exp_results.png&quot; alt=&quot;experiment results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/publications_dir/admittance_control_paper.pdf&quot;&gt;Conference Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/abono3/copuav&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;</content><author><name>past</name></author><summary type="html">This project uses filtering to estimate forces exerted on a quadrotor and develop a reference trajectoryto track desired motions.</summary></entry><entry><title type="html">Online Cross Entropy Task Allocation</title><link href="/2020/12/01/Online-Cross-Entropy-Task-Allocation.html" rel="alternate" type="text/html" title="Online Cross Entropy Task Allocation" /><published>2020-12-01T00:00:00-05:00</published><updated>2020-12-01T00:00:00-05:00</updated><id>/2020/12/01/Online-Cross-Entropy-Task-Allocation</id><content type="html" xml:base="/2020/12/01/Online-Cross-Entropy-Task-Allocation.html">&lt;p&gt;An online method for cross-entropy sampling is developed, used in multi-agent task allocation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/U9OZ_tGr4As&quot;&gt;&lt;img src=&quot;/assets/images/online_ce_experiment_run_simback.png&quot; alt=&quot;online_sim_back&quot; /&gt;&lt;/a&gt;
+&lt;strong&gt;Click on the Image for Video&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;project-summary&quot;&gt;Project Summary&lt;/h3&gt;
+&lt;p&gt;This paper presents a task orchestration framework for multiagent systems utilising linear temporal logic (LTL) and cross entropy optimisation, a stochastic optimisation technique used for rare-event sampling.&lt;/p&gt;
+
+&lt;p&gt;We define task orchestration as a combination of task decomposition, allocation and planning for a quadcopter or team of quadcopters given a high level specification. Specifically, we consider tasks that are complex and consist of environment constraints, system constraints, or both, that must be satisfied.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/online_ce_journal/robo_env_product_sys.png&quot; alt=&quot;transition_system&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We first approach motion planning for the single agent case where transition systems for the environment allow tasks to be developed as linear temporal logic (LTL) specifications. Trajectories are then generated via motion primitives for a single quadcopter and optimised via cross entropy to ensure optimal satisfaction of a cost function. We extend this work to the multiagent case where a team of homogeneous quadcopters are considered to satisfy an LTL specification.&lt;/p&gt;
+
+&lt;p&gt;In order to provide faster computations and initial cost-agnostic sampling, we formulate the online version of multi-agent task allocation via cross entropy for tasks specified in LTL specifications. The results of this framework are verified in simulation and experimentally with a team of quadcopters.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/online_ce_journal/still_from_exp_journal.png&quot; alt=&quot;still_from_exp_journal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/publications_dir/ltl_cross_entropy_2022.pdf&quot;&gt;Journal Paper&lt;/a&gt;&lt;/p&gt;</content><author><name>past</name></author><summary type="html">An online method for cross-entropy sampling is developed, used in multi-agent task allocation.</summary></entry><entry><title type="html">Anomaly Detection In Auv Images</title><link href="/2020/04/14/Anomaly-Detection-In-AUV-Images.html" rel="alternate" type="text/html" title="Anomaly Detection In Auv Images" /><published>2020-04-14T00:00:00-04:00</published><updated>2020-04-14T00:00:00-04:00</updated><id>/2020/04/14/Anomaly-Detection-In-AUV-Images</id><content type="html" xml:base="/2020/04/14/Anomaly-Detection-In-AUV-Images.html">&lt;p&gt;Classifying and categorizing anomolous data gathered from a deep sea autonomous underwater vehicle (AUV).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/icefin_img.jpeg&quot; alt=&quot;UAVML&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This was a project completed Spring 2020 during the Machine Learning course at Georgia Tech. Our team acquired data from the IceFin AUV composed of 2,000 images of the Antartic seabed. We trained a CNN to classify images as either anomolous or non-anomolous. From this classified data, we used unsupervised machine learning algorithms to group similar images. See the full project as well as Github repo below.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.christopherjamesbanks.com/ML_project/&quot;&gt;Project Link&lt;/a&gt;&lt;/p&gt;</content><author><name>past</name></author><summary type="html">Classifying and categorizing anomolous data gathered from a deep sea autonomous underwater vehicle (AUV).</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.christopherjamesbanks.com/ML_project/&quot;&gt;Project Link&lt;/a&gt;&lt;/p&gt;</content><author><name>past</name></author><summary type="html">Classifying and categorizing anomolous data gathered from a deep sea autonomous underwater vehicle (AUV).</summary></entry><entry><title type="html">Specification Based Maneuvering Of Quadcopters</title><link href="/2019/11/04/Specification-Based-Maneuvering-of-Quadcopters.html" rel="alternate" type="text/html" title="Specification Based Maneuvering Of Quadcopters" /><published>2019-11-04T00:00:00-05:00</published><updated>2019-11-04T00:00:00-05:00</updated><id>/2019/11/04/Specification-Based-Maneuvering-of-Quadcopters</id><content type="html" xml:base="/2019/11/04/Specification-Based-Maneuvering-of-Quadcopters.html">&lt;p&gt;Development of a motion planning and task delegation framework that leverages quadrotor dynamics and temporal logic.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/bDOgGxCg0pU&quot;&gt;&lt;img src=&quot;/assets/images/specification_based_conference/composite_still.png&quot; alt=&quot;composite_still&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A composite image of a quadcopter satisfying a user provided specification (click on image for video&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;project-summary&quot;&gt;Project Summary&lt;/h3&gt;
+&lt;p&gt;In this paper, we study the problem of navigating
+quadcopters through a sequence of hoops.&lt;/p&gt;
+
+&lt;p&gt;The specification
+may be given directly or indirectly via a linear temporal logic
+(LTL) formula. We approach this problem in three phases.&lt;/p&gt;
+
+&lt;p&gt;First, we introduce a planner that generates a path through
+a given sequence of hoops.&lt;/p&gt;
+
+&lt;p&gt;Second, we augment our planner
+to leverage a given specification in linear temporal logic (LTL)
+and generate a sequence that satisfies this specification.&lt;/p&gt;
+
+&lt;p&gt;Third,
+we implement cross-entropy optimization on this planner to
+enhance trajectory performance where quadcopter trajectories
+are modified within the solution space to optimize over a cost function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/specification_based_conference/samples_of_all_paths.png&quot; alt=&quot;path samples&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We implement this planner as a novel interaction modality between users and quadcopters on the Robotarium. Simulation and experimental results are provided.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/specification_based_conference/spec_based_maneuver_still.png&quot; alt=&quot;still_from_exp_conf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/publications_dir/specification_paper_2019.pdf&quot;&gt;Conference Paper&lt;/a&gt;&lt;/p&gt;</content><author><name>past</name></author><summary type="html">Development of a motion planning and task delegation framework that leverages quadrotor dynamics and temporal logic.</summary></entry></feed>
